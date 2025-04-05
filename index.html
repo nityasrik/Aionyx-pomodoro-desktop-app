@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pomodoro Timer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="drag-area">
+    <h1>Pomodoro Timer</h1>
+    <p>Pick your focus buddy! ✨</p>
+
+    <!-- Character Navigation -->
+    <div class="character-container">
+      <button id="prev-character" class="nav-btn" aria-label="Previous character">◀</button>
+      <img id="character" src="images/char1.png" alt="Character" class="character" />
+      <button id="next-character" class="nav-btn" aria-label="Next character">▶</button>
+    </div>
+
+    <!-- Status Message -->
+    <p id="status" aria-live="polite">Let's begin!!</p>
+
+    <!-- Main Bento Layout -->
+    <div class="bento-wrapper">
+      <!-- Timer Section -->
+      <div class="timer-container">
+        <div id="timer" class="timer-text" aria-label="Time remaining">25:00</div>
+        <div class="progress-container">
+          <div id="progressBar" class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="btn-group">
+          <button id="start" class="btn" aria-label="Start timer">Start</button>
+          <button id="pause" class="btn" aria-label="Pause timer">Pause</button>
+          <button id="reset" class="btn" aria-label="Reset timer">Reset</button>
+          <button id="close-btn" class="btn close-btn" aria-label="Close application">Quit</button>
+        </div>
+      </div>
+
+      <!-- Sound & Theme Section -->
+      <div class="sound-container">
+        <label for="sound-select">Choose Your Sound:</label>
+        <select id="sound-select" class="btn" aria-label="Select background sound">
+          <option value="none">None</option>
+          <option value="rain">Rain</option>
+          <option value="cafe">Cafe</option>
+          <option value="bgm">Focus Music</option>
+        </select>
+        
+        <!-- Theme Toggle Switch -->
+        <div class="theme-toggle-container">
+          <label class="theme-toggle">
+            <input type="checkbox" id="theme-toggle">
+            <span class="slider">
+              <span class="sun"><i class="fas fa-sun"></i></span>
+              <span class="moon"><i class="fas fa-moon"></i></span>
+            </span>
+          </label>
+          <span class="theme-label">Night Mode</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audio Elements -->
+  <audio id="bg-audio" loop></audio>
+  <audio id="click-sound" src="audio/click.mp3"></audio>
+
+  <!-- Script -->
+  <script src="script.js" defer></script>
+</body>
+</html>
