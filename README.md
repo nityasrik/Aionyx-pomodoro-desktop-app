@@ -28,11 +28,8 @@ Stay focused with your adorable little buddy 🧍💤 — whether you're studyin
 
 
 
-### Break Timer
-<img src="./screenshots/break.png" width="350">
-
-### Sounds
-<img src="./screenshots/sounds.png" width="350">
+### Sounds>>>>>>>>>>>>>>>>>>>>>>Break Timer              
+<img src="./screenshots/break.png" width="350">       <img src="./screenshots/sounds.png" width="350">                         
 
 
 ---
