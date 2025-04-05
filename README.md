@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./screenshots/repo-banner.png" alt="Pomodoro Desktop App Banner" width="50%">
+  <img src="./screenshots/repo-banner.png" alt="Pomodoro Desktop App Banner" width="100%">
 </p>
 
 # Pomodoro Desktop App
@@ -29,10 +29,10 @@ Stay focused with your adorable little buddy 🧍💤 — whether you're studyin
 
 <img src="./screenshots/night-mode.png" width="350">
 
-### Sounds             
+### Break Timer             
 <img src="./screenshots/break.png" width="350"> 
 
-### Break Timer 
+### Sounds
  <img src="./screenshots/sounds.png" width="350">
 ---
 
