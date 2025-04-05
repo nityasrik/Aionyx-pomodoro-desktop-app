@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./repo-banner.png" alt="Pomodoro Desktop App Banner" width="100%">
+  <img src="./screenshots/repo-banner.png" alt="Pomodoro Desktop App Banner" width="100%">
 </p>
 
 # Pomodoro Desktop App
