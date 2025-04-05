@@ -22,16 +22,18 @@ Stay focused with your adorable little buddy 🧍💤 — whether you're studyin
 
 ## 📸 Screenshots
 
-### ☀️ Light Mode   >>>>>>>>>>>>>>>🌙 Dark Mode  
-  <img src="./screenshots/day-mode.png" width="350">          <img src="./screenshots/night-mode.png" width="350">
-                                                      
+### ☀️ Light Mode   
+  <img src="./screenshots/day-mode.png" width="350">
+  
+### 🌙 Dark Mode
 
+<img src="./screenshots/night-mode.png" width="350">
 
+### Sounds             
+<img src="./screenshots/break.png" width="350"> 
 
-### Sounds>>>>>>>>>>>>>>>>>>>>>>Break Timer              
-<img src="./screenshots/break.png" width="350">       <img src="./screenshots/sounds.png" width="350">                         
-
-
+### Break Timer 
+ <img src="./screenshots/sounds.png" width="350">
 ---
 
 ## 🚀 Getting Started
