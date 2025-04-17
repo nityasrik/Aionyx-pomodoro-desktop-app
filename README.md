@@ -42,10 +42,10 @@ This is my take on **"cozy tech meets clever tools."**
 <img src="./screenshots/nightmode.png" width="350">
 
 ### ✅ Task Tracker + Stats
-<img src="./screenshots/taskmanager.png" width="500">
+<img src="./screenshots/taskmanager.png" width="300">
 
 ### 📊 Weekly Analytics
-<img src="./screenshots/analytics.png" width="500">
+<img src="./screenshots/analytics.png" width="300">
 
 ### Layout
  <img src="./screenshots/layout.png" width="350">
