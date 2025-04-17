@@ -1,42 +1,66 @@
-<p align="center">
-  <img src="./screenshots/repo-banner.png" alt="Pomodoro Desktop App Banner" width="100%">
-</p>
+# Pomodoro Focus Companion
 
-# Pomodoro Desktop App
+A pixel-perfect Pomodoro desktop app built with **Electron.js**, designed to help users stay focused and organized — with a sprinkle of cuteness ✨
 
-A minimalist and aesthetic Pomodoro timer built with Electron.js.  
-Stay focused with your adorable little buddy 🧍💤 — whether you're studying, working, or just vibing.
+Whether you're working, studying, or just trying to vibe without distractions, this app turns productivity into a cozy ritual.
+
+---
+
+## 🌟 Why I Built This
+
+As a designer-developer passionate about productivity and delightful interfaces, I wanted to craft a Pomodoro app that felt less clinical and more *comforting*. Something with:
+
+- Personality (hello, little focus buddy!)
+- Functional beauty (bento layout, task tracking, analytics)
+- Aesthetic charm (pixel fonts, pastel modes, animated touches)
+
+This is my take on **"cozy tech meets clever tools."**
 
 ---
 
 ## ✨ Features
 
-- ⏱ **Bento-style Pomodoro layout** — no distractions, just vibes  
-- 🧍‍♂️ **Focus Buddy** — a cute little friend to keep you company  
-- 🌗 **Day & Night Modes** — switch themes based on your mood  
-- 🔊 **Optional background music** — lo-fi focus feels  
-- 💻 **Cross-platform** and runs offline  
-- 🛠 Built using **Electron + JavaScript**
+- ⏱ **Pomodoro Timer** with Start / Pause / Reset controls
+- 🧍‍♂️ **Focus Buddy** – pick your character companion
+- 🎵 **Ambient Sound Picker** – rain, café, or focus music
+- 🌗 **Day/Night Mode Toggle** – dynamic theming
+- ✅ **Task Tracker** – add, complete, and delete tasks
+- 📊 **Analytics Dashboard** – charts, streaks, completion rate
+- 🔁 **Session History + Mini Stats** – track your daily focus
+- 🗂 **Offline-First** – no login, no cloud, just pure local goodness
+- 💅 Pixel fonts, soft glows, animated details – for that *extra charm*
 
 ---
 
-## 📸 Screenshots
+## 📸 Gallery
 
 ### ☀️ Light Mode   
-  <img src="./screenshots/day-mode.png" width="350">
+  <img src="./screenshots/daymode.png" width="350">
   
 ### 🌙 Dark Mode
 
-<img src="./screenshots/night-mode.png" width="350">
+<img src="./screenshots/nightmode.png" width="350">
 
-### Break Timer             
-<img src="./screenshots/break.png" width="350"> 
+### ✅ Task Tracker + Stats
+<img src="./screenshots/taskmanager.png" width="300">
+
+### 📊 Weekly Analytics
+<img src="./screenshots/analytics.png" width="300">
+
+### Layout
+ <img src="./screenshots/layout.png" width="350">
 
 ### Sounds
  <img src="./screenshots/sounds.png" width="350">
 ---
 
-## 🚀 Getting Started
+## 🧠 Built With
+
+- [Electron.js](https://www.electronjs.org/)
+- HTML5 + CSS3 (with love)
+- Vanilla JavaScript
+- Chart.js for data visualizations
+- FontAwesome + Google Fonts for icons & style
 
 ### 🔧 Prerequisites
 
