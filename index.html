@@ -7,6 +7,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&family=Silkscreen&display=swap" rel="stylesheet">
 </head>
 <body>
   <div id="drag-area">
@@ -60,6 +62,11 @@
           </label>
           <span class="theme-label">Night Mode</span>
         </div>
+
+        <!-- Task Manager Toggle Button -->
+        <button id="task-manager-toggle" class="btn task-manager-btn" aria-label="Toggle task manager">
+          <i class="fas fa-tasks"></i> Task Manager
+        </button>
       </div>
     </div>
   </div>
@@ -68,7 +75,110 @@
   <audio id="bg-audio" loop></audio>
   <audio id="click-sound" src="audio/click.mp3"></audio>
 
+  <!-- Side Panel -->
+  <div class="side-panel">
+    <div class="panel-header">
+      <h2>Task Tracker</h2>
+      <div class="tab-buttons">
+        <button class="tab-btn active" data-tab="tasks">Tasks</button>
+        <button class="tab-btn" data-tab="analytics">Analytics</button>
+      </div>
+      <button class="close-panel"><i class="fas fa-times"></i></button>
+    </div>
+    
+    <!-- Tasks Tab -->
+    <div class="tab-content active" id="tasks-tab">
+      <div class="task-input-container">
+        <input type="text" id="task-input" placeholder="Add a new task...">
+        <button id="add-task" class="btn"><i class="fas fa-plus"></i></button>
+      </div>
+      
+      <div class="task-list">
+        <ul id="tasks"></ul>
+      </div>
+
+      <div class="session-history">
+        <h3>Session History</h3>
+        <div class="stats-container">
+          <div class="stat-box">
+            <span class="stat-value" id="today-sessions">0</span>
+            <span class="stat-label">Today</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value" id="week-sessions">0</span>
+            <span class="stat-label">This Week</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-value" id="total-sessions">0</span>
+            <span class="stat-label">Total</span>
+          </div>
+        </div>
+        <div class="history-list">
+          <h4>Recent Sessions</h4>
+          <ul id="recent-sessions"></ul>
+        </div>
+      </div>
+
+      <!-- Mini Stats Section -->
+      <div class="mini-stats">
+        <h4>Mini Stats</h4>
+        <div class="stat-card">
+          <div class="stat-icon">✅</div>
+          <div class="stat-content">
+            <span class="stat-title">Most Completed Task</span>
+            <span class="stat-data" id="most-completed-task">No tasks yet</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🥇</div>
+          <div class="stat-content">
+            <span class="stat-title">Focus Streak</span>
+            <span class="stat-data" id="focus-streak">0 days</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🌸</div>
+          <div class="stat-content">
+            <span class="stat-title">Daily Motivation</span>
+            <span class="stat-data" id="motivational-quote">Loading...</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Analytics Tab -->
+    <div class="tab-content" id="analytics-tab">
+      <div class="chart-container">
+        <h3>Weekly Focus</h3>
+        <canvas id="weekly-chart"></canvas>
+      </div>
+      <div class="chart-container">
+        <h3>Task Completion</h3>
+        <canvas id="task-chart"></canvas>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">📊</div>
+          <div class="stat-content">
+            <span class="stat-title">Average Focus Time</span>
+            <span class="stat-data" id="avg-focus-time">0 min</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">🎯</div>
+          <div class="stat-content">
+            <span class="stat-title">Task Completion Rate</span>
+            <span class="stat-data" id="completion-rate">0%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Script -->
   <script src="script.js" defer></script>
+
+  <!-- Add Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </body>
 </html>
