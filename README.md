@@ -1,4 +1,4 @@
-# Pomodoro Focus Companion
+# Aionyx – A Pomodoro Focus Companion
 
 A pixel-perfect Pomodoro desktop app built with **Electron.js**, designed to help users stay focused and organized — with a sprinkle of cuteness ✨
 
